@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import {MdLocationOn} from 'react-icons/md'
+import {FaSuitcase} from 'react-icons/fa'
 import {AiFillStar} from 'react-icons/ai'
 import {BiLinkExternal} from 'react-icons/bi'
 import Loader from 'react-loader-spinner'
@@ -26,7 +27,7 @@ class AboutJobItem extends Component {
     this.getJobData()
   }
 
-  getJobData = async props => {
+  getJobData = async () => {
     const {match} = this.props
     const {params} = match
     const {id} = params
@@ -94,7 +95,6 @@ class AboutJobItem extends Component {
         companyLogoUrl,
         companyWebsiteUrl,
         employmentType,
-        id,
         jobDescription,
         lifeAtCompany,
         location,
@@ -114,7 +114,7 @@ class AboutJobItem extends Component {
                   alt="job details company logo"
                 />
                 <div className="title-rating-container">
-                  <h1 className="title-heading">{title}</h1>
+                  <p className="title-heading">{title}</p>
                   <div className="star-rating-container">
                     <AiFillStar className="star-icon" />
                     <p className="rating-text">{rating}</p>
@@ -128,26 +128,29 @@ class AboutJobItem extends Component {
                     <p className="location">{location}</p>
                   </div>
                   <div className="employment-type-icon-employment-type-container">
-                    <p className="job-type">{employmentType}</p>
+                    <FaSuitcase className="location-icon" />
+                    <p className="location">{employmentType}</p>
                   </div>
                 </div>
                 <div className="package-container">
-                  <p className="package">{packagePerAnnum}</p>
+                  <p className="location">{packagePerAnnum}</p>
                 </div>
               </div>
             </div>
             <hr className="item-hr-line" />
             <div className="second-part-container">
               <div className="description-visit-container">
-                <h1 className="description-job-heading">Description</h1>
-                <a className="visit-anchor" href={companyWebsiteUrl}>
-                  Visit <BiLinkExternal />
-                </a>
+                <p className="description-job-heading">Description</p>
+                <div className="visit-icon">
+                  <a className="visit-anchor" href={companyWebsiteUrl}>
+                    Visit <BiLinkExternal className="vi-icon" />
+                  </a>
+                </div>
               </div>
               <p className="description-para">{jobDescription}</p>
             </div>
-            <h1>Skills</h1>
-            <ul className="ul-job-details-container">
+            <p className="skill-heading">Skills</p>
+            <ul className="skillset-container">
               {skills.map(eachItem => (
                 <li className="li-job-details-container" key={eachItem.name}>
                   <img
@@ -155,7 +158,7 @@ class AboutJobItem extends Component {
                     src={eachItem.imageUrl}
                     alt={eachItem.name}
                   />
-                  <p>{eachItem.name}</p>
+                  <p className="skill-name">{eachItem.name}</p>
                 </li>
               ))}
             </ul>
