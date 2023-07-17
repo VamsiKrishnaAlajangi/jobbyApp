@@ -1,0 +1,79 @@
+.jobs-container {
+  background-color: #000000;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+.jobs-input-container {
+  border: 1px solid #7e858e;
+  width: 90%;
+  display: flex;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.jobs-input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding-left: 6px;
+}
+.icon {
+  color: #7e858e;
+  align-self: center;
+}
+.profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+
+  background-size: cover;
+  width: 90%;
+  padding: 26px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.profile-image {
+  width: 20%;
+}
+.profile-name {
+  font-family: 'Roboto';
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 20px;
+}
+.profile-bio {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+.line {
+  color: #6366f1;
+  width: 90%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.employment-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  align-self: flex-start;
+  padding-left: 16px;
+}
+.check-box-container {
+  align-self: flex-start;
+  padding-left: 16px;
+}
+.checkbox-label {
+  color: #ffffff;
+}
+.list-item {
+  margin-bottom: 12px;
+}
+.checkbox-input {
+  margin-right: 8px;
+}
+.jobs-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+}

@@ -1,0 +1,18 @@
+.nav-bar {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.header-logo {
+  width: 25%;
+}
+.menu-container {
+  align-self: center;
+}
+.icon {
+  color: #cbd5e1;
+  margin-right: 12px;
+  height: 20px;
+  width: 30px;
+}
