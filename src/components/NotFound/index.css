@@ -1,0 +1,21 @@
+.not-found-bg-container {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 36px;
+}
+.not-found-image {
+  width: 100%;
+}
+.text {
+  font-family: 'Roboto';
+  color: #ffffff;
+}
+.not-found {
+  font-size: 26px;
+  font-weight: 600;
+}

@@ -20,6 +20,17 @@ const Header = props => {
           className="header-logo"
         />
       </Link>
+      <div className="menu-container-browser">
+        <Link to="/" className="menu-nav">
+          <p className="menu">Home</p>
+        </Link>
+        <Link to="/jobs" className="menu-nav">
+          <p className="menu">Jobs</p>
+        </Link>
+      </div>
+      <button type="button" className="logout-button" onClick={onLogout}>
+        Logout
+      </button>
       <div className="menu-container">
         <Link to="/">
           <AiFillHome className="icon" />

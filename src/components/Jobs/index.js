@@ -287,13 +287,29 @@ class Jobs extends Component {
             />
             <AiOutlineSearch className="icon" />
           </div>
-          {this.renderProfileDetails()}
-          <hr className="line" />
-          <p className="employment-heading">Type of Employment</p>
-          {this.renderCheckboxes()}
-          <hr className="line" />
-          {this.renderRadioButtons()}
-          <div className="jobs-container">{this.renderJobs()}</div>
+          <div className="jobs-profile-container">
+            <div className="render-profile-filters-container">
+              {this.renderProfileDetails()}
+              <hr className="line" />
+              <p className="employment-heading">Type of Employment</p>
+              {this.renderCheckboxes()}
+              <hr className="line" />
+              {this.renderRadioButtons()}
+            </div>
+            <div>
+              <div className="jobs-input-container-browser">
+                <input
+                  type="input"
+                  className="jobs-input"
+                  placeholder="Search"
+                  onChange={this.onChangeSearchInput}
+                  onKeyDown={this.onEnterSearchInput}
+                />
+                <AiOutlineSearch className="icon" />
+              </div>
+              <div className="jobs-container">{this.renderJobs()}</div>
+            </div>
+          </div>
         </div>
       </>
     )

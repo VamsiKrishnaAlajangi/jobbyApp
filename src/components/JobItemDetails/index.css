@@ -221,3 +221,21 @@
 .similar-jobs-heading {
   color: #ffffff;
 }
+
+@media screen and (min-width: 768px) {
+  .company-life-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .life-heading-para-container {
+    width: 50%;
+    align-self: flex-start;
+    margin-left: 16px;
+  }
+  .location-job-type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

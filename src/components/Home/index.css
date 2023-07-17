@@ -21,4 +21,18 @@
   padding: 8px;
   font-family: 'Roboto';
   border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+  }
+  .responsive-container {
+    width: 60%;
+    padding: 56px;
+  }
+  .jobs-heading {
+    font-size: 60px;
+  }
 }
